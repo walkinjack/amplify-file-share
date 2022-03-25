@@ -141,7 +141,7 @@ Who should have access: ...  (Use arrow keys or type to filter)
 
 #### Add the API
 
-```
+```shell
 amplify add api
 ? Select from one of the below mentioned services: (Use arrow keys)
 > GraphQL // this one
