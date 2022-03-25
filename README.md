@@ -9,7 +9,7 @@
 ### Install Node Packages
 Runn the following command in your terminal
 
-```
+```shell
 npm install -g gatsby-cli @aws-amplify/cli
 ```
 
@@ -27,7 +27,7 @@ You will need IAM credentials to access your current or new amazon account using
 1. open your command prompt/terminal
 2. clone the repository
 
-```
+```shell
 git clone https://github.com/walkinjack/amplify-file-share.git
 
 cd amplify-file-share
@@ -38,7 +38,7 @@ amplify init
 
 Go Through the prompts:
 
-```
+```shell
 ? Enter a name for the project (amplifyfileshare)
 
 The following configuration will be applied:
@@ -74,7 +74,7 @@ Continue running commands to finish setting up the project:
 
 #### Add Auth (for user access)
 
-```
+```shell
 amplify add auth
 
  Do you want to use the default authentication and security configuration? (Use arrow keys)
@@ -105,7 +105,7 @@ amplify update auth
 
 #### Add Storage
 
-```
+```shell
 amplify add storage
 ? Select from one of the below mentioned services: (Use arrow keys)
 > Content (Images, audio, video, etc.) // this one
@@ -188,7 +188,9 @@ aStore): Disabled
 ? Do you want to edit the schema now? (Y/n) » Y
 
 // If the file doesn't open you can find it at ./amplify/backend/api/amplifyfileshare/schema.graphql
-// Open the file and replace the content with this:
+```
+```graphql
+// Open the file ./amplify/backend/api/amplifyfileshare/schema.graphql and replace the content with this:
 
 
 type UserUpload @model @auth(rules: [
@@ -209,7 +211,7 @@ type UserUpload @model @auth(rules: [
 #### Create Everything in the Cloud
 Now everything has been set up on your computer, and you can now build it in the cloud by running the following:
 
-```
+```shell
 amplify push
 
 ? Are you sure you want to continue? Yes
@@ -235,7 +237,7 @@ API key configuration
 #### Add Hosting
 This step gives you a website that you can share with others
 
-```
+```shell
 amplify add hosting
 
 ? Select the plugin module to execute (Use arrow keys)
