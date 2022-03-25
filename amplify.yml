@@ -1,0 +1,29 @@
+version: 1
+backend:
+  phases:
+    build:
+      commands:
+        - amplifyPush --simple
+frontend:
+  phases:
+    # IMPORTANT - Please verify your build commands
+    preBuild:
+      commands:
+        - echo Check yarn version
+        - yarn --version
+        - echo Installing source NPM dependencies...
+        - yarn install
+    build:
+      commands:
+        - yarn build
+    postBuild:
+      commands:
+        - aws amplify update-app --app-id "d2fpq1bpovioir" --custom-rules file://custom_rules.json
+  artifacts:
+    # IMPORTANT - Please verify your build output directory
+    baseDirectory: public
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*

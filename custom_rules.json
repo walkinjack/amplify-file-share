@@ -1,0 +1,17 @@
+[
+  {
+    "source": "/binance",
+    "target": "https://accounts.binance.us/en/register?ref=53597299",
+    "status": "301"
+  },
+  {
+    "source": "/coinbase",
+    "target": "https://coinbase.com/join/willia_zj8",
+    "status": "301"
+  },
+  {
+    "source": "/mycamera",
+    "target": "https://amzn.to/3foisQ7",
+    "status": "301"
+  }
+]
