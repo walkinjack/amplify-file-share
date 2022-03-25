@@ -9,7 +9,9 @@
 ### Install Node Packages
 Runn the following command in your terminal
 
-`npm install -g gatsby-cli @aws-amplify/cli
+```
+npm install -g gatsby-cli @aws-amplify/cli
+```
 
 ## Amazon Web Services Credentials
 
@@ -25,17 +27,19 @@ You will need IAM credentials to access your current or new amazon account using
 1. open your command prompt/terminal
 2. clone the repository
 
-`git clone https://github.com/walkinjack/amplify-file-share.git
+```
+git clone https://github.com/walkinjack/amplify-file-share.git
 
 cd amplify-file-share
 
 amplify init
 
-`
+```
 
 Go Through the prompts:
 
-`? Enter a name for the project (amplifyfileshare)
+```
+? Enter a name for the project (amplifyfileshare)
 
 The following configuration will be applied:
 
@@ -63,14 +67,15 @@ AWS access keys <--- Select this one and press enter
 ? secretAccessKey:  ****************************************    //enter the SecretKey from Output tab of the Amazon Cloud Formation Template that we ran earlier
 ? region: us-east-1 //select us-east-1
 
-`
+```
 
 ### Now your initial Amplify Project has been set up
 Continue running commands to finish setting up the project:
 
 #### Add Auth (for user access)
 
-`amplify add auth
+```
+amplify add auth
 
  Do you want to use the default authentication and security configuration? (Use arrow keys)
 > Default configuration //select this
@@ -96,11 +101,12 @@ amplify update auth
 ? Provide a name for your user pool group: admin
 ? Do you want to add another User Pool Group (y/N) n
 
-`
+```
 
 #### Add Storage
 
-`amplify add storage
+```
+amplify add storage
 ? Select from one of the below mentioned services: (Use arrow keys)
 > Content (Images, audio, video, etc.) // this one
   NoSQL Database
@@ -131,11 +137,12 @@ Who should have access: ...  (Use arrow keys or type to filter)
 ❯√ delete          //hit spacebar to allow delete
 
 ? Do you want to add a Lambda Trigger for your S3 Bucket? (y/N) » N //no we don't need this
-`
+```
 
 #### Add the API
 
-`amplify add api
+```
+amplify add api
 ? Select from one of the below mentioned services: (Use arrow keys)
 > GraphQL // this one
 
@@ -196,13 +203,14 @@ type UserUpload @model @auth(rules: [
   file_name: String
   received: Boolean
 }
-`
+```
 
 
 #### Create Everything in the Cloud
 Now everything has been set up on your computer, and you can now build it in the cloud by running the following:
 
-`amplify push
+```
+amplify push
 
 ? Are you sure you want to continue? Yes
 API key configuration
@@ -222,16 +230,17 @@ API key configuration
 
 ? Enter maximum statement depth [increase from default if your schema is deeply nested] (2)
 
-`
+```
 
 #### Add Hosting
 This step gives you a website that you can share with others
 
-`amplify add hosting
+```
+amplify add hosting
 
 ? Select the plugin module to execute (Use arrow keys)
 > Hosting with Amplify Console (Managed hosting with custom domains, Continuous deployment)  //if you are new to all this, this is a little more advanced and worth learning, it saves time in the future
 
 
 
-`
+```
