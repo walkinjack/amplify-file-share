@@ -275,3 +275,13 @@ https://dev.randomnumbersandletters.amplifyapp.com
 ```
 
 Go to the site, create an account, and try it out!!
+
+#### Final Step
+After making an account on your website, you'll want to add it to the admin group so you can fully use the site;
+
+1. Go to Cognito User Pools in Amazon [https://us-east-1.console.aws.amazon.com/cognito/users/?region=us-east-1](https://us-east-1.console.aws.amazon.com/cognito/users/?region=us-east-1)
+2. Click on your userpool, it should contain amplifyfileshare in the name
+3. Click on Users and Groups in the left hand menu
+4. Click your username
+5. Click the Add to Group Button
+6. Select admin, and then add to group

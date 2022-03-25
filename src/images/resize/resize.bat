@@ -1,1 +1,0 @@
-for %%f in (*.jpg) do magick %%f -resize 235 "resized-%%f"

@@ -5,8 +5,8 @@ import Button from '@mui/material/Button';
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
-import darkLogo from "../../../../images/sammy.life-logo-dark.svg";
-import lightLogo from "../../../../images/sammy.life-logo-white.svg";
+import darkLogo from "../../../../images/fileshare.svg";
+import lightLogo from "../../../../images/fileshare-light.svg";
 
 const Footer = () => {
   const theme = useTheme();
@@ -26,7 +26,7 @@ const Footer = () => {
             display={'flex'}
             component="a"
             href="/"
-            title="Sam Williams sammy.life"
+            title="File Share"
             width={150}
           >
             <Box
@@ -52,18 +52,6 @@ const Footer = () => {
                 Home
               </Link>
             </Box>
-            <Box marginTop={1}>
-              <Button
-                variant="outlined"
-                color="primary"
-                component="a"
-                target="blank"
-                href="/contact"
-                size="small"
-              >
-                Contact Me
-              </Button>
-            </Box>
           </Box>
         </Box>
       </Grid>
@@ -74,7 +62,7 @@ const Footer = () => {
           color="text.secondary"
           gutterBottom
         >
-          &copy; Sam Williams {new Date().getFullYear()}. All rights reserved
+          <a href="https://github.com/walkinjack/amplify-file-share">Simple File Share</a>
         </Typography>
         <Typography
           align={'center'}
@@ -82,10 +70,7 @@ const Footer = () => {
           color="text.secondary"
           component={'p'}
         >
-          When you visit or interact with our sites, services or tools, we or
-          our authorised service providers may use cookies for storing
-          information to help provide you with a better, faster and safer
-          experience and for marketing purposes.
+          A simple project using AWS Amplify
         </Typography>
       </Grid>
     </Grid>
