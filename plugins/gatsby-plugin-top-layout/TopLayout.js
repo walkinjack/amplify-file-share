@@ -17,17 +17,17 @@ export default function TopLayout(props) {
         <meta charSet="utf-8" />
         <link
           rel="shortcut icon"
-          href="https://assets.maccarianagency.com/favicons/thefront/favicon.ico"
+          href="/favicon.ico"
         />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <title>theFront | UI Kit by Maccarian Agency.</title>
+        <title>File Sharing</title>
         <meta name="theme-color" content="#ffffff" />
         <meta
           name="description"
-          content="A modern design system for your new landing and web pages."
+          content="A simple site to upload and share files"
         />
         <meta
           name="robots"
@@ -37,19 +37,19 @@ export default function TopLayout(props) {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://assets.maccarianagency.com/screenshots/the-front/social.png"
+          content="/social.jpg"
         />
         <meta
           property="og:title"
-          content="theFront | UI Kit by Maccarian Agency."
+          content="Simple File Sharing"
         />
         <meta
           property="og:description"
-          content="A modern design system for your new landing and web pages."
+          content="A simple site to upload and share files"
         />
         <meta
           property="og:url"
-          content="https://thefront.maccarianagency.com/"
+          content="https://github.com/walkinjack/amplify-file-share.git"
         />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />

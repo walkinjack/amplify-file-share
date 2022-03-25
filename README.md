@@ -7,7 +7,10 @@
 4. Git installed [https://git-scm.com/book/en/v2/Getting-Started-Installing-Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
 ## Cloning the Git Repository
-1. 
+1. open your command prompt/terminal
+2. clone the repository
+
+`git clone https://github.com/walkinjack/amplify-file-share.git`
 
 ## Amazon Web Services Credentials
 
