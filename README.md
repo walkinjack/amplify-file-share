@@ -1,3 +1,12 @@
+---
+title: Creating A Photo Sharing App With AWS Amplify
+date: "2022-03-27T11:01:03.284Z"
+description: "A tutorial using Amazon Web Services Amplify project to create a photo sharing application"
+author: "Sam Williams"
+headerImage: ./amplify-logo.jpg
+thumbnail: ./amplify-logo.jpg
+isFeatured: true
+---
 # Simple AWS Amplify Project to Share Files
 ## Requirements
 
@@ -285,3 +294,18 @@ After making an account on your website, you'll want to add it to the admin grou
 4. Click your username
 5. Click the Add to Group Button
 6. Select admin, and then add to group
+
+## All Done
+You can look through the code and play around to change it to meet your needs. 
+
+To run the code on your computer to see how your code changes work, you can run
+
+```shell
+gatsby develop
+```
+
+If you want to deploy your changes to your public website, you can run
+
+```shell
+amplify publish
+```
